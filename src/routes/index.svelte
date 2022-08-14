@@ -44,9 +44,7 @@
 
 {#if $isLoading == false}
 	<header class="h-20 flex flex-col justify-center bg-white">
-		<h1 class="inline-block align-middle text-center text-5xl italic font-black text-[#38b6ff]">
-			BTRAINS
-		</h1>
+		<h1 class="inline-block align-middle text-center text-5xl italic text-[#38b6ff]">BTRAINS</h1>
 	</header>
 
 	<div class="overflow-hidden md:text-center md:h-[30rem]">
@@ -89,7 +87,7 @@
 			<div class="w-full">
 				<!--<Input title="" placeholder="" forIdName="" bind:value={timesel} type={InputType.Radio} />-->
 
-				<label class="text-lg font-bold text-[#ddf1fa] p-2 inline-block">
+				<label class="text-lg font-semibold text-[#ddf1fa] p-2 inline-block">
 					<input
 						class="appearance-none rounded-full w-4 h-4 border-2 border-[#ddf1fa] bg-[#ddf1fa] ease-out duration-300 checked:bg-[#38b6ff]"
 						type="radio"
@@ -99,7 +97,7 @@
 					/>
 					{$_('Departure')}
 				</label>
-				<label class="text-lg font-bold text-[#ddf1fa] p-2 inline-block">
+				<label class="text-lg font-semibold text-[#ddf1fa] p-2 inline-block">
 					<input
 						class="appearance-none rounded-full w-4 h-4 border-2 border-[#ddf1fa] bg-[#ddf1fa] ease-out duration-300 checked:bg-[#38b6ff]"
 						type="radio"
@@ -115,7 +113,7 @@
 				class="block bg-white rounded-lg px-10 py-2 mx-auto mt-8 disabled:opacity-50 text-[#38b6ff] stroke-[#38b6ff] fill-[#38b6ff] enabled:hover:text-[#21678f] enabled:hover:stroke-[#21678f] enabled:hover:fill-[#21678f] enabled:hover:shadow-sm enabled:hover:shadow-black enabled:active:translate-y-1 enabled:active:shadow-none"
 				disabled={!canSubmit}
 			>
-				<span class="text-lg font-bold ">{$_('Plan_my_journey')}</span>
+				<span class="text-lg font-semibold ">{$_('Plan_my_journey')}</span>
 				<Arrow css="inline stroke-10 ml-2" />
 			</button>
 		</form>

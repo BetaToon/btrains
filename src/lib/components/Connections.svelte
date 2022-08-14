@@ -16,14 +16,14 @@
 	md:relative md:h-auto md:inline-block md:my-2.5 
 	{open ? 'right-0 md:w-[23rem]' : '-right-full md:w-0'}"
 >
-	<div class="text-right bg-[#38b6ff] text-[#ddf1fa] font-bold text-m">
+	<div class="text-right bg-[#38b6ff] text-[#ddf1fa] font-semibold text-m">
 		<button class="m-2.5" on:click={() => showConnections.set(false)}>
 			{$_('Close')}
 			<Cross css="h-2.5 inline fill-[#ddf1fa] stroke-[#ddf1fa] stroke-7" />
 		</button>
 	</div>
 
-	<div class="mx-4 my-2.5 font-bold divide-y-2 space-y-2">
+	<div class="mx-4 my-2.5 font-semibold divide-y-2 space-y-2">
 		{#await $connections then conGroup}
 			{#if $connections.connection != null}
 				{#each conGroup.connection as conn}

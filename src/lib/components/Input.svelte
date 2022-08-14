@@ -29,7 +29,7 @@
 </script>
 
 <div
-	class="font-bold p-2 border-b-2 mt-1 {isFocused
+	class="font-semibold p-2 border-b-2 mt-1 {isFocused
 		? 'bg-white border-gray-300 rounded-t-md'
 		: 'border-[#ddf1fa] rounded-none'}"
 >
