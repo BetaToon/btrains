@@ -91,7 +91,7 @@
 
 				<label class="text-lg font-bold text-[#ddf1fa] p-2 inline-block">
 					<input
-						class="appearance-none rounded-full w-4 h-4 border ease-in-out duration-300 checked:border-4"
+						class="appearance-none rounded-full w-4 h-4 border-2 border-[#ddf1fa] bg-[#ddf1fa] ease-out duration-300 checked:bg-[#38b6ff]"
 						type="radio"
 						bind:group={timesel}
 						name="timesel"
@@ -101,7 +101,7 @@
 				</label>
 				<label class="text-lg font-bold text-[#ddf1fa] p-2 inline-block">
 					<input
-						class="appearance-none rounded-full w-4 h-4 border ease-in-out duration-300 checked:border-4"
+						class="appearance-none rounded-full w-4 h-4 border-2 border-[#ddf1fa] bg-[#ddf1fa] ease-out duration-300 checked:bg-[#38b6ff]"
 						type="radio"
 						bind:group={timesel}
 						name="timesel"
