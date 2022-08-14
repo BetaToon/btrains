@@ -1,0 +1,15 @@
+{
+    "Departure": "Departure",
+    "Arrival": "Arrival",
+    "From": "From",
+    "To": "To",
+    "Plan_my_journey": "Plan my journey",
+    "Close": "Close",
+    "Platform": "Platform",
+    "Change": "Change",
+    "Changes": "Changes",
+    "hour": "h",
+    "minute": "min",
+    "Date": "Date",
+    "Time": "Time"
+}
