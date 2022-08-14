@@ -47,7 +47,7 @@
 		<h1 class="inline-block  align-middle text-center text-5xl italic text-[#38b6ff]">BTRAINS</h1>
 	</header>
 
-	<div class="overflow-hidden md:text-center md:h-[30rem]">
+	<div class="overflow-hidden md:text-center">
 		<form
 			on:submit|preventDefault={handleSubmit}
 			class="mx-2 h-full md:w-[23rem] md:my-2.5 md:mx-0 md:inline-block md:text-left md:align-top"
@@ -110,7 +110,7 @@
 			</div>
 
 			<button
-				class="block bg-white rounded-lg px-10 py-2 mx-auto mt-8 disabled:opacity-50 text-[#38b6ff] stroke-[#38b6ff] fill-[#38b6ff] enabled:hover:text-[#21678f] enabled:hover:stroke-[#21678f] enabled:hover:fill-[#21678f] enabled:hover:shadow-sm enabled:hover:shadow-black enabled:active:translate-y-1 enabled:active:shadow-none"
+				class="block bg-white rounded-lg px-10 py-2 mx-auto mt-8 mb-1 disabled:opacity-50 text-[#38b6ff] stroke-[#38b6ff] fill-[#38b6ff] enabled:hover:text-[#21678f] enabled:hover:stroke-[#21678f] enabled:hover:fill-[#21678f] enabled:hover:shadow-sm enabled:hover:shadow-black enabled:active:translate-y-1 enabled:active:shadow-none"
 				disabled={!canSubmit}
 			>
 				<span class="text-lg  ">{$_('Plan_my_journey')}</span>
