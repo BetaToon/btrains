@@ -12,8 +12,8 @@
 </script>
 
 <aside
-	class="text-left fixed w-full h-full top-0 bg-white ease-in-out duration-300 
-	md:relative md:h-auto md:inline-block md:my-2.5 
+	class="text-left fixed w-full h-full top-0 ease-in-out duration-300 bg-white
+	md:relative md:h-auto md:inline-block md:my-2.5 md:bg-transparent
 	{open ? 'right-0 md:w-[23rem]' : '-right-full md:w-0'}"
 >
 	<div class="text-right bg-[#38b6ff] text-[#ddf1fa]  text-m">
@@ -23,7 +23,7 @@
 		</button>
 	</div>
 
-	<div class="mx-4 my-2.5  divide-y-2 space-y-2">
+	<div class="px-4 py-2.5  divide-y-2 space-y-2 bg-white rounded-lg">
 		{#await $connections then conGroup}
 			{#if $connections.connection != null}
 				{#each conGroup.connection as conn}
