@@ -29,7 +29,7 @@
 	let timesel: string = 'departure';
 
 	let canSubmit: boolean;
-	$: canSubmit = from && to && date ? true : false;
+	$: canSubmit = from && to && date && time ? true : false;
 
 	function handleSubmit() {
 		connections.get(from, to, new Date(date), time.replace(':', ''), timesel);
