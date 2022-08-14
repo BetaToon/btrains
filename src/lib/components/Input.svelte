@@ -23,9 +23,22 @@
 		input?.blur();
 	}
 
-	$: filteredstations = $stations?.station?.filter((s) =>
-		s.name.startsWith(value.charAt(0).toUpperCase() + value.slice(1))
-	);
+	$: filteredstations = $stations?.station
+		?.filter(
+			(s) =>
+				s.name.toLowerCase().startsWith(value.toLowerCase()) ||
+				s.name.toLowerCase().includes(value.toLowerCase())
+		)
+		.sort(
+			(a, b) =>
+				+b.name.toLowerCase().startsWith(value.toLowerCase()) -
+				+a.name.toLowerCase().startsWith(value.toLowerCase())
+		);
+	/*.filter((s) => s.name.startsWith(value.charAt(0).toUpperCase() + value.slice(1)))
+		.sort()
+		.concat(
+			$stations?.station?.filter((s) => s.name.toLowerCase().includes(value.toLowerCase())).sort()
+		);*/
 </script>
 
 <div
