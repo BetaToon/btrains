@@ -11,5 +11,6 @@
     "hour": "h",
     "minute": "min",
     "Date": "Date",
-    "Time": "Heure"
+    "Time": "Heure",
+    "NotFoundConnections": "Aucun itinéraire n'a été trouvé"
 }

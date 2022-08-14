@@ -11,5 +11,6 @@
     "hour": "h",
     "minute": "min",
     "Date": "Date",
-    "Time": "Time"
+    "Time": "Time",
+    "NotFoundConnections": "No itinary was found"
 }

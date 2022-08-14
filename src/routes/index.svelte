@@ -34,12 +34,6 @@
 	function handleSubmit() {
 		connections.get(from, to, new Date(date), time.replace(':', ''), timesel);
 	}
-
-	connections.subscribe((c) => {
-		if (c.connection != null) {
-			showConnections.set(true);
-		}
-	});
 </script>
 
 {#if $isLoading == false}

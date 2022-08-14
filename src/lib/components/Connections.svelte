@@ -52,6 +52,8 @@
 						</div>
 					</div>
 				{/each}
+			{:else}
+				<p class="text-center">{$_('NotFoundConnections')}</p>
 			{/if}
 		{/await}
 	</div>

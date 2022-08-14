@@ -11,5 +11,6 @@
     "hour": "u",
     "minute": "min",
     "Date": "Datum",
-    "Time": "Tijd"
+    "Time": "Tijd",
+    "NotFoundConnections": "Er is geen route gevonden"
 }
