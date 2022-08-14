@@ -90,11 +90,23 @@
 				<!--<Input title="" placeholder="" forIdName="" bind:value={timesel} type={InputType.Radio} />-->
 
 				<label class="text-lg font-bold text-[#ddf1fa] p-2 inline-block">
-					<input type="radio" bind:group={timesel} name="timesel" value={'departure'} />
+					<input
+						class="appearance-none rounded-full w-4 h-4 border ease-in-out duration-300 checked:border-4"
+						type="radio"
+						bind:group={timesel}
+						name="timesel"
+						value={'departure'}
+					/>
 					{$_('Departure')}
 				</label>
 				<label class="text-lg font-bold text-[#ddf1fa] p-2 inline-block">
-					<input type="radio" bind:group={timesel} name="timesel" value={'arrival'} />
+					<input
+						class="appearance-none rounded-full w-4 h-4 border ease-in-out duration-300 checked:border-4"
+						type="radio"
+						bind:group={timesel}
+						name="timesel"
+						value={'arrival'}
+					/>
 					{$_('Arrival')}
 				</label>
 			</div>
