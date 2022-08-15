@@ -116,3 +116,12 @@
 		{/if}
 	</label>
 </div>
+
+<style>
+	input[type='date']::-webkit-calendar-picker-indicator {
+		background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' %3F%3E%3Csvg style='fill:rgb(221, 241, 250);' width='35px' height='35px' viewBox='0 0 35 35' data-name='Layer 2' id='a866a81f-2948-4418-8bd5-1a5193c5f74e' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M29.545 34.75H5.455a5.211 5.211 0 0 1-5.2-5.2V8.56a5.21 5.21 0 0 1 5.205-5.2h24.09a5.21 5.21 0 0 1 5.2 5.205V29.545A5.211 5.211 0 0 1 29.545 34.75ZM5.455 5.855A2.708 2.708 0 0 0 2.75 8.56V29.545a2.709 2.709 0 0 0 2.705 2.7h24.09a2.708 2.708 0 0 0 2.7-2.7V8.56a2.707 2.707 0 0 0-2.7-2.7Z'/%3E%3Cpath d='M33.5 17.331H1.541a1.25 1.25 0 0 1 0-2.5H33.5a1.25 1.25 0 0 1 0 2.5Z'/%3E%3Cpath d='M9.459 9.155a1.249 1.249 0 0 1-1.25-1.25V1.5a1.25 1.25 0 0 1 2.5 0V7.905A1.25 1.25 0 0 1 9.459 9.155Z'/%3E%3Cpath d='M25.542 9.155a1.249 1.249 0 0 1-1.25-1.25V1.5a1.25 1.25 0 0 1 2.5 0V7.905A1.25 1.25 0 0 1 25.542 9.155Z'/%3E%3C/svg%3E");
+	}
+	input[type='time']::-webkit-calendar-picker-indicator {
+		background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' %3F%3E%3Csvg style='fill:rgb(221, 241, 250);' width='35px' height='35px' viewBox='0 0 35 35' data-name='Layer 2' id='Layer_2' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17.5 34.75A17.25 17.25 0 1 1 34.75 17.5 17.27 17.27 0 0 1 17.5 34.75Zm0-32A14.75 14.75 0 1 0 32.25 17.5 14.77 14.77 0 0 0 17.5 2.75Z'/%3E%3Cpath d='M23.37 18.75H17.5a1.25 1.25 0 0 1-1.25-1.25V10.58a1.25 1.25 0 1 1 2.5 0v5.67h4.62a1.25 1.25 0 1 1 0 2.5Z'/%3E%3C/svg%3E");
+	}
+</style>
