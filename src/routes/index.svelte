@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { toIsoString } from '$lib/date-helper';
-	import { connections, showConnections, stations } from '$lib/irail-service';
+	import { connections, loadingConnections, showConnections, stations } from '$lib/irail-service';
 	import { InputType } from '$lib/enums/input-type';
 	import { register, init, getLocaleFromNavigator, isLoading, _, locale } from 'svelte-i18n';
 	import Input from '$lib/components/Input.svelte';
@@ -29,7 +29,7 @@
 	let timesel: string = 'departure';
 
 	let canSubmit: boolean;
-	$: canSubmit = from && to && date && time ? true : false;
+	$: canSubmit = from && to && date && time && !$loadingConnections ? true : false;
 
 	function handleSubmit() {
 		connections.get(from, to, new Date(date), time.replace(':', ''), timesel);
@@ -108,7 +108,7 @@
 				disabled={!canSubmit}
 			>
 				<span class="text-lg  ">{$_('Plan_my_journey')}</span>
-				<Arrow css="inline stroke-10 ml-2" />
+				<Arrow css="inline stroke-10 ml-2 {$loadingConnections ? 'animate-spin' : ''}" />
 			</button>
 		</form>
 		<Connections />
