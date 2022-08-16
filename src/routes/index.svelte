@@ -41,7 +41,7 @@
 		<h1 class="inline-block  align-middle text-center text-5xl italic text-[#38b6ff]">BTRAINS</h1>
 	</header>
 
-	<div class="overflow-hidden md:text-center">
+	<div class="md:text-center">
 		<form
 			on:submit|preventDefault={handleSubmit}
 			class="mx-2 h-full md:w-[23rem] md:my-2.5 md:mx-0 md:inline-block md:text-left md:align-top"

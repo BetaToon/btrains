@@ -12,5 +12,8 @@
     "minute": "min",
     "Date": "Datum",
     "Time": "Tijd",
-    "NotFoundConnections": "Er is geen route gevonden"
+    "NotFoundConnections": "Er is geen route gevonden",
+    "Today": "Vandaag",
+    "Tomorrow": "Morgen",
+    "Yesterday": "Gisteren"
 }

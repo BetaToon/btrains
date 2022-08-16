@@ -12,5 +12,8 @@
     "minute": "min",
     "Date": "Date",
     "Time": "Heure",
-    "NotFoundConnections": "Aucun itinéraire n'a été trouvé"
+    "NotFoundConnections": "Aucun itinéraire n'a été trouvé",
+    "Today": "Aujourd'hui",
+    "Tomorrow": "Demain",
+    "Yesterday": "Hier"
 }
